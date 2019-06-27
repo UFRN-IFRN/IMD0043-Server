@@ -1,0 +1,15 @@
+;
+; BIND data file for teobaldo.net
+;
+$TTL	604800
+@	IN	SOA	teobaldo.net. admin.teobaldo.net. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@		IN	NS	ns.teobaldo.net.
+teobaldo.net 	IN	A	10.0.2.15
+ns		IN	A	10.0.2.15
+www		IN	CNAME	teobaldo.net.
